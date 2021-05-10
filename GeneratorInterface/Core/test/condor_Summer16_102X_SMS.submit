@@ -1,0 +1,17 @@
+universe = vanilla 
+executable = execute_script_Summer16_102X_SMS.sh
+use_x509userproxy = true 
+Arguments = $(Item) 
+output = /home/t3-ku/z374f439/NANOAOD/CMSSW_10_2_20_UL/src/ListMaker/GeneratorInterface/Core/test/condor_Summer16_102X_SMS/$(Item).out 
+error = /home/t3-ku/z374f439/NANOAOD/CMSSW_10_2_20_UL/src/ListMaker/GeneratorInterface/Core/test/condor_Summer16_102X_SMS/$(Item).err 
+log = /home/t3-ku/z374f439/NANOAOD/CMSSW_10_2_20_UL/src/ListMaker/GeneratorInterface/Core/test/condor_Summer16_102X_SMS/$(Item).log 
+Requirements = (Machine != "red-node000.unl.edu")
+request_memory = 4 GB 
+transfer_input_files = config_Summer16_102X_SMS.tgz
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_output_files = $(Item)
+transfer_output_remaps = "$(Item)=/home/t3-ku/z374f439/NANOAOD/CMSSW_10_2_20_UL/src/ListMaker/GeneratorInterface/Core/test/condor_Summer16_102X_SMS/$(Item)"
++ProjectName="cms.org.ku"
++REQUIRED_OS="rhel7"
+queue from lists_Summer16_102X_SMS.txt

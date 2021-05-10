@@ -1,4 +1,8 @@
 samples/
 MINI/
+*.nfs*
 GeneratorInterface/Core/test/*.out
 backup_FilterEff/
+GeneratorInterface/Core/test/config*
+GeneratorInterface/Core/test/list*
+GeneratorInterface/Core/test/condor*_SMS/
