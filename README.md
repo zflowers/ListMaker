@@ -13,6 +13,14 @@ python batchList.py -i DataSetsList/sms/ -o MINI
 
 Then go to: GeneratorInterface/Core/test/
 
-run make_filter_file.py
+use this to make the lists: 
 
-nohup python make_filter_file.py > make_filter_file.out & 
+ls ../../../MINI/Autumn18_102X_SMS/ > lists_Autumn18_102X_SMS.txt
+
+then run:
+
+python make_filter_file.py
+
+Finally run:
+
+python convert_filter_file.py
