@@ -87,16 +87,59 @@ else:
             yeartag = 'Fall17'
         if "2018" in filename:
             yeartag = 'Autumn18'
+        if "2016UL" in filename:
+            yeartag = 'Summer20UL16'
+        if "2016ULAPV" in filename:
+            yeartag = 'Summer20UL16APV'
+        if "2017UL" in filename:
+            yeartag = 'Summer20UL17'
+        if "2018UL" in filename:
+            yeartag = 'Summer20UL18'
     
         if filename.endswith(".txt"):
             print(os.path.join(directory,filename))
             with open(os.path.join(directory,filename), 'r') as handle:
                 for line in handle:
-                    os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*AODv7*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
-                    #os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*Mini*/*MINI*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
-                    with open('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n')), 'r') as datasetlist:
-                        for dataset in datasetlist:
-                            os.system('dasgoclient -query="file dataset={ds_loc}" >> {ds_name}.txt'.format(ds_loc=dataset.rstrip('\n'),ds_name=line.rstrip('\n')))
+                    if 'UL' in yeartag:
+                        if 'APV' in yeartag:
+                            os.system('dasgoclient -query="dataset=/{ds_name}/*Summer20UL16*APV*AODv9*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
+                            if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
+                                print("NanoAODv9 not available for: "+str(line.rstrip('\n')))
+                                os.system('dasgoclient -query="dataset=/{ds_name}/*Summer20UL16*APV*AODv8*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
+                                if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
+                                    os.system('dasgoclient -query="dataset=/{ds_name}/*Summer20UL16*APV*Nano*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
+                                    if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
+                                        print("NanoAOD not available for: "+str(line.rstrip('\n')))
+                            #os.system('dasgoclient -query="dataset=/{ds_name}/Summer20UL16*APV*Mini*/*MINI*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
+                            with open('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n')), 'r') as datasetlist:
+                                for dataset in datasetlist:
+                                    os.system('dasgoclient -query="file dataset={ds_loc}" >> {ds_name}.txt'.format(ds_loc=dataset.rstrip('\n'),ds_name=line.rstrip('\n')))
+                        else:
+                            os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*AODv9*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
+                            if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
+                                print("NanoAODv9 not available for: "+str(line.rstrip('\n')))
+                                os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*AODv8*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
+                                if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
+                                    os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*Nano*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
+                                    if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
+                                        print("NanoAOD not available for: "+str(line.rstrip('\n')))
+                            #os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*Mini*/*MINI*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
+                            with open('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n')), 'r') as datasetlist:
+                                for dataset in datasetlist:
+                                    os.system('dasgoclient -query="file dataset={ds_loc}" >> {ds_name}.txt'.format(ds_loc=dataset.rstrip('\n'),ds_name=line.rstrip('\n')))
+                    else:
+                        os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*AODv7*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
+                        if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
+                            print("NanoAODv7 not available for: "+str(line.rstrip('\n')))
+                            os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*AODv4*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
+                            if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
+                                os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*Nano*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
+                                if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
+                                    print("NanoAOD not available for: "+str(line.rstrip('\n')))
+                        #os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*Mini*/*MINI*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
+                        with open('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n')), 'r') as datasetlist:
+                            for dataset in datasetlist:
+                                os.system('dasgoclient -query="file dataset={ds_loc}" >> {ds_name}.txt'.format(ds_loc=dataset.rstrip('\n'),ds_name=line.rstrip('\n')))
     
         os.system('rm *dataset.txt')
         if "sms" in directory:
