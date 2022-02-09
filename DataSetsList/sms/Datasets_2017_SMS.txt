@@ -14,11 +14,9 @@ SMS-T1tttt_mGluino-2000_mLSP-100_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-T2tt_mStop-400to1200_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-T1tttt_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-T2cc_genMET-80_mStop-250_mLSP-230_TuneCP2_13TeV-madgraphMLM-pythia8
-SMS-T2tt_mStop-150to250_TuneCP2_13TeV-madgraphMLM-pythia8_fastsim
 SMS-T2tt_mStop-350to400_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-T2tt_mStop-650_mLSP-350_TuneCP5_13TeV-madgraphMLM-pythia8
 SMS-T2tt_mStop-650_mLSP-350_TuneCP2_13TeV-madgraphMLM-pythia8
-SMS-T2tt_mStop-150to250_TuneCP2_13TeV-madgraphMLM-pythia8_ext1_fastsim
 SMS-T2tt_mStop-1200_mLSP-100_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-T2bt_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-T1bbbb_mGluino-1000_mLSP-900_TuneCP2_13TeV-madgraphMLM-pythia8
@@ -65,8 +63,6 @@ SMS-TSlepSlep_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-TSlepSlep_mSlep-500To1300_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-TChiWZ_ZToLL_mZMin-0p1_mC1-325to1000_TuneCP2_13TeV-madgraphMLM-pythia8
 TChiWZ_genHT-160_genMET-80_TuneCP2_13TeV-madgraphMLM-pythia8
-SMS-TSlepSlep_mSlep-500To1300_TuneCP2_13TeV-madgraphMLM-pythia8
-TChiWZ_genHT-160_genMET-80_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-TStauStau-Ewkino_lefthanded_dM-10to40_genHT-80_genMET-80_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-TStauStau-Ewkino_lefthanded_dM-50_genHT-80_genMET-80_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-TStauStau_ctau-0p01to10_TuneCP5_13TeV-madgraphMLM-pythia8
@@ -89,3 +85,4 @@ SMS-TChipmWW_dM-3to50_genHT-160_genMET-80_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-TChiWZ_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-TChipmSlepSnu_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-TChipmSlepSnu_mC1_825_1500_TuneCP2_13TeV-madgraphMLM-pythia8
+SMS-TSlepSlep_genHT-160_genMET-80_TuneCP2_13TeV-madgraphMLM-pythia8

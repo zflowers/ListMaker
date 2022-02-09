@@ -2,14 +2,13 @@ SMS-T2tt_mStop-650_mLSP-350_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T5tttt_dM175_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T2tt_mStop-850_mLSP-100_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T1tttt_mGluino-1200_mLSP-800_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
-SMS-T1ttbb_TuneCP2_13TeV-madgraphMLM-pythia8
+SMS-T1ttbb_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-N2C1-higgsino_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T2tt_mStop-500_mLSP-325_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T2tt_mStop-400to1200_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T2tt_mStop-1200to2000_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T2tt_mStop-300_mLSP-150_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T2bt_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
-SMS-T2bb_mSbot-1650to2600_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T2tt_dM-10to80_genHT-160_genMET-80_mWMin-0p1_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T2tt_mStop-250_mLSP-150_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T2tt_mStop-325_mLSP-150_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
@@ -17,7 +16,6 @@ SMS-T2tt_mStop-425_mLSP-325_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T2tt_mStop-350_mLSP-150_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T2tt_mStop-250_mLSP-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T1tttt_mGluino-2000_mLSP-100_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
-SMS-T2tt_mStop-250to350_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T2bb_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T1tttt_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T5ttcc_mGluino1750to2800_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
@@ -27,8 +25,6 @@ SMS-T2tt_mStop-200_mLSP-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T2tt_mStop-150_mLSP-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T2cc_genHT-160_genMET-80_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T5ttcc_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
-SMS-T2tt_mStop-350to400_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
-SMS-T2tt_mStop-150to250_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T2bW_X05_dM-10to80_genHT-160_genMET-80_mWMin-0p1_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T2bW_X05_dM-10to80_2Lfilter_mWMin-0p1_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-T2-4bd_2Lfilter_mStop-400_mLSP-350_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
@@ -100,3 +96,4 @@ SMS-TChipmWW_dM-3to50_genHT-160_genMET-80_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-TChipmWW_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-TChipmSlepSnu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 SMS-TChipmSlepSnu_mC1_825_1500_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
+SMS-TSlepSlep_genHT-160_genMET-80_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
