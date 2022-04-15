@@ -11,13 +11,7 @@ Use batchlist to make lists of MINIAOD files for SMS samples
 python batchList.py -i DataSetsList/sms/ -o MINI
 (ignore warnings)
 
-Then go to: GeneratorInterface/Core/test/
-
-use this to make the lists: 
-
-ls ../../../MINI/Autumn18_102X_SMS/ > lists_Autumn18_102X_SMS.txt
-
-then run:
+Then go to: GeneratorInterface/Core/test/ and then run:
 
 python make_filter_file.py
 
