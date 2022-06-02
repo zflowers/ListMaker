@@ -15,9 +15,10 @@ process.maxEvents = cms.untracked.PSet(
     input = cms.untracked.int32(-1)
 )
 
-filelist = FileUtils.loadListFromFile(options.inputFiles[0])
+#filelist = FileUtils.loadListFromFile(options.inputFiles[0])
 process.source = cms.Source("PoolSource",
-    fileNames = cms.untracked.vstring(*filelist)
+    #fileNames = cms.untracked.vstring(*filelist)
+    fileNames = cms.untracked.vstring(options.inputFiles)
 )
 
 process.dummy = cms.EDAnalyzer("GenFilterEfficiencyAnalyzer",

@@ -16,8 +16,6 @@ SMS-T1tttt_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-T2cc_genMET-80_mStop-250_mLSP-230_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-T2tt_mStop-350to400_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-T2tt_mStop-650_mLSP-350_TuneCP5_13TeV-madgraphMLM-pythia8
-SMS-T2tt_mStop-650_mLSP-350_TuneCP2_13TeV-madgraphMLM-pythia8
-SMS-T2tt_mStop-1200_mLSP-100_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-T2bt_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-T1bbbb_mGluino-1000_mLSP-900_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-T5tttt_dM175_TuneCP2_13TeV-madgraphMLM-pythia8

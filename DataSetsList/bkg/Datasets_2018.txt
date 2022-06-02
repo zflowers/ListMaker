@@ -49,7 +49,6 @@ WWW_4F_TuneCP5_13TeV-amcatnlo-pythia8
 GJets_DR-0p4_HT-200To400_TuneCP5_13TeV-madgraphMLM-pythia8
 TTZToLLNuNu_M-10_TuneCP5_13TeV-amcatnlo-pythia8
 ST_tWll_5f_LO_TuneCP5_PSweights_13TeV-madgraph-pythia8
-ZZTo4L_TuneCP5_13TeV_powheg_pythia8
 TTJets_TuneCP5_13TeV-madgraphMLM-pythia8
 ZJetsToNuNu_HT-200To400_13TeV-madgraph
 GluGluHToZZTo4L_M125_13TeV_powheg2_JHUGenV7011_pythia8
