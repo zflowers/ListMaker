@@ -10,6 +10,7 @@ def make_submit_sh(srcfile,year,dataset):
     fsrc.write('error = $ENV(PWD)/condor_'+year+'/err/'+dataset+'/'+dataset+'_$(ProcId).err \n')
     fsrc.write('log = $ENV(PWD)/condor_'+year+'/log/'+dataset+'/'+dataset+'_$(ProcId).log \n')
     fsrc.write('Requirements = (Machine != "red-node000.unl.edu") \n')
+    fsrc.write('Requirements = (Machine != "red-node000.unl.edu" && Machine != "ncm*.hpc.itc.rwth-aachen.de" && Machine != "wn-a2-26-01.brunel.ac.uk" && Machine != "mh-epyc7662-8.t2.ucsd.edu")\n')
     fsrc.write('request_memory = 2 GB \n')
     fsrc.write('transfer_input_files = runGenFilterEfficiencyAnalyzer_cfg.py,cmssw_setup.sh,sandbox-CMSSW_10_2_20_UL-9d39de6.tar.bz2 \n')
     fsrc.write('should_transfer_files = YES \n')

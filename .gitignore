@@ -6,3 +6,4 @@ backup_FilterEff/
 GeneratorInterface/Core/test/config*
 GeneratorInterface/Core/test/list*
 GeneratorInterface/Core/test/condor*_SMS/
+GeneratorInterface/Core/test/*SMS/
