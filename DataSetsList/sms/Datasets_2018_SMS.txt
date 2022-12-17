@@ -18,6 +18,8 @@ SMS-T2tt_3J-MaxMixing_xqcut-20_top-corridorRefMasses_2Lfilter_TuneCP5_13TeV-madg
 SMS-T2tt_3J-LH_xqcut-20_top-corridorRefMasses_2Lfilter_TuneCP5_13TeV-madgraphMLM-pythia8
 SMS-N2C1-higgsino_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-N2C1-higgsino_mN2-260to500_TuneCP2_13TeV-madgraphMLM-pythia8
+SMS-N2N1-higgsino_TuneCP2_13TeV-madgraphMLM-pythia8
+SMS-N2N1-higgsino_mN2-260to500_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-T1ttbb_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-T1tttt_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-T2bW_X05_dM-10to80_2Lfilter_mWMin-0p1_TuneCP2_13TeV-madgraphMLM-pythia8
@@ -60,8 +62,11 @@ SMS-TStauStau_righthanded_mStau-225to250_TuneCP5_13TeV-madgraphMLM-pythia8
 SMS-TStauStau_righthanded_mStau-275to500_TuneCP5_13TeV-madgraphMLM-pythia8
 SMS-TStauStau_righthanded_mStau-90_mLSP-20_TuneCP5_13TeV-madgraphMLM-pythia8
 SMS-T2tt_dM-6to8_genHT-160_genMET-80_TuneCP2_13TeV-madgraphMLM-pythia8
-SMS-TChipmWW_dM-3to50_genHT-160_genMET-80_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-TChiWZ_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-TChipmSlepSnu_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-TChipmSlepSnu_mC1_825_1500_TuneCP2_13TeV-madgraphMLM-pythia8
 SMS-TSlepSlep_genHT-160_genMET-80_TuneCP2_13TeV-madgraphMLM-pythia8
+SMS-TChipmWW_dM-3to50_genHT-160_genMET-80_TuneCP2_13TeV-madgraphMLM-pythia8
+SMS-TChipmWW_dM-60to90_genHT-160_genMET-80_TuneCP2_13TeV-madgraphMLM-pythia8
+SMS-TChiWZ_dM-60to90_genHT-160_genMET-80_TuneCP2_13TeV-madgraphMLM-pythia8
+SMS-T2bW_X05_dM-90to170_genHT-160_genMET-80_mWMin-0p1_TuneCP2_13TeV-madgraphMLM-pythia8
