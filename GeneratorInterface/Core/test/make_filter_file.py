@@ -1,5 +1,21 @@
 import os
 
+safety_jobs = 6000
+
+def get_jobs():
+    jobs = 0
+    os.system("source /uscms/home/z374f439/nobackup/UNL_T3_Home/Eff_NANO/ReducedNtuple/scripts/Plot_watch.sh > watch.txt")
+    os.system("sleep 5")
+    watch_file = open("watch.txt","r")
+    for line in watch_file:
+        watch_jobs = line.split(',')
+        for phrase in watch_jobs:
+            if 'query' in phrase:
+                words = phrase.split()
+                jobs += int(words[3])
+    return jobs
+    os.system("rm watch.txt")
+
 def make_submit_sh(srcfile,year,dataset):
     fsrc = open(srcfile,'w')
     fsrc.write('universe = vanilla \n') 
@@ -37,4 +53,11 @@ for directory in dir_list:
         os.system("mkdir -p condor_"+directory+'txt/'+dataset+'/')
         srcfile = "condor_"+directory+"src/"+dataset+".submit"
         make_submit_sh(srcfile,directory.replace('/',''),dataset)
+        print("condor_submit "+srcfile)
+        NJOBS = get_jobs()
+        while NJOBS > safety_jobs:
+            print("Hit safety limit")
+            print("Waiting for "+str(NJOBS-safety_jobs)+" jobs to finish...")
+            os.system("sleep 60")
+            NJOBS = get_jobs()
         os.system("condor_submit "+srcfile)
