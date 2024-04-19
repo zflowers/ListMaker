@@ -19,7 +19,7 @@ output = options.output
 yeartag = ''
 year = ''
 alltxtfiles = []
-MINI = False
+MINI = True
 
 if not directory:
     sys.exit("You need to specify the directory! (See help).")
