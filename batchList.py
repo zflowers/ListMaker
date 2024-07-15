@@ -115,26 +115,6 @@ else:
                             for dataset in datasetlist:
                                 if("JME" in dataset): continue
                                 os.system('dasgoclient -query="file dataset={ds_loc}" >> {ds_name}.txt'.format(ds_loc=dataset.rstrip('\n'),ds_name=line.rstrip('\n')))
-                        if MINI:
-                            os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*MiniAODv4*/*MINI*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
-                            if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
-                                os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*MiniAODv3*/*MINI*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
-                                if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
-                                    os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*Mini*/*MINI*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
-                        else:
-                            os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*AODv12*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
-                            if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
-                                print("NanoAOD not available for: "+str(line.rstrip('\n')))
-                                #print("NanoAODv9 not available for: "+str(line.rstrip('\n')))
-                                #os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*AODv8*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
-                                #if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
-                                #    os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*Nano*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
-                                #    if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
-                                #        print("NanoAOD not available for: "+str(line.rstrip('\n')))
-                        with open('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n')), 'r') as datasetlist:
-                            for dataset in datasetlist:
-                                if("JME" in dataset): continue
-                                os.system('dasgoclient -query="file dataset={ds_loc}" >> {ds_name}.txt'.format(ds_loc=dataset.rstrip('\n'),ds_name=line.rstrip('\n')))
                     elif 'EE' in yeartag:
                         if MINI:
                             os.system('dasgoclient -query="dataset=/{ds_name}/Summer22*EE*Mini*/*MINI*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
@@ -148,26 +128,6 @@ else:
                             #        os.system('dasgoclient -query="dataset=/{ds_name}/*Summer20UL16*APV*Nano*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
                             #        if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
                             #            print("NanoAOD not available for: "+str(line.rstrip('\n')))
-                        with open('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n')), 'r') as datasetlist:
-                            for dataset in datasetlist:
-                                if("JME" in dataset): continue
-                                os.system('dasgoclient -query="file dataset={ds_loc}" >> {ds_name}.txt'.format(ds_loc=dataset.rstrip('\n'),ds_name=line.rstrip('\n')))
-                        if MINI:
-                            os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*MiniAODv4*/*MINI*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
-                            if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
-                                os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*MiniAODv3*/*MINI*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
-                                if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
-                                    os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*Mini*/*MINI*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
-                        else:
-                            os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*AODv12*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
-                            if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
-                                print("NanoAOD not available for: "+str(line.rstrip('\n')))
-                                #print("NanoAODv9 not available for: "+str(line.rstrip('\n')))
-                                #os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*AODv8*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
-                                #if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
-                                #    os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*Nano*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
-                                #    if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
-                                #        print("NanoAOD not available for: "+str(line.rstrip('\n')))
                         with open('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n')), 'r') as datasetlist:
                             for dataset in datasetlist:
                                 if("JME" in dataset): continue
