@@ -82,12 +82,12 @@ if "data" in directory:
 
 else:
     for filename in os.listdir(directory):
-        if "2022_EE" in filename:
-            yeartag = 'Summer22_EE'
+        if "2022EE" in filename:
+            yeartag = 'Summer22EE'
         elif "2022" in filename:
             yeartag = 'Summer22'
-        elif "2023_BPix" in filename:
-            yeartag = 'Summer23_BPix'
+        elif "2023BPix" in filename:
+            yeartag = 'Summer23BPix'
         elif "2023" in filename:
             yeartag = 'Summer23'
         else:
@@ -104,7 +104,7 @@ else:
                         else:
                             os.system('dasgoclient -query="dataset=/{ds_name}/*Summer23*BPix*AODv12*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
                             if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
-                                print("NanoAOD not available for: "+str(line.rstrip('\n')))
+                                print("NanoAOD not available for: "+str(line.rstrip('\n') + " in year: "+yeartag))
                             #    print("NanoAODv9 not available for: "+str(line.rstrip('\n')))
                             #    os.system('dasgoclient -query="dataset=/{ds_name}/*Summer20UL16*APV*AODv8*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
                             #    if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
@@ -121,7 +121,7 @@ else:
                         else:
                             os.system('dasgoclient -query="dataset=/{ds_name}/*Summer22*EE*AODv12*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
                             if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
-                                print("NanoAOD not available for: "+str(line.rstrip('\n')))
+                                print("NanoAOD not available for: "+str(line.rstrip('\n') + " in year: "+yeartag))
                             #    print("NanoAODv9 not available for: "+str(line.rstrip('\n')))
                             #    os.system('dasgoclient -query="dataset=/{ds_name}/*Summer20UL16*APV*AODv8*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
                             #    if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
@@ -142,7 +142,7 @@ else:
                         else:
                             os.system('dasgoclient -query="dataset=/{ds_name}/*{year}NanoAODv12*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
                             if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
-                                print("NanoAOD not available for: "+str(line.rstrip('\n')))
+                                print("NanoAOD not available for: "+str(line.rstrip('\n') + " in year: "+yeartag))
                                 #print("NanoAODv7 not available for: "+str(line.rstrip('\n')))
                                 #os.system('dasgoclient -query="dataset=/{ds_name}/*{year}*AODv4*/*NANO*" >> {ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag))
                                 #if os.stat('{ds_name}_dataset.txt'.format(ds_name=line.rstrip('\n'),year=yeartag)).st_size == 0:
